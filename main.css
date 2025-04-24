@@ -1,0 +1,56 @@
+/* DEVELOPER Woojeong Yoo, IS117-102, Spring 2025 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: #FFF5F8;
+}
+header {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+body {
+    text-align: center;
+}
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+    top: 50%;
+    left: 20%;
+}
+#nav_menu ul li {
+	float: left;
+	width: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    padding: 1em 0%;
+    text-decoration: none;
+    background-color: #FFF5F8;
+    color: black;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: #FF2575;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+	width: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+    color: #FF2575;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
